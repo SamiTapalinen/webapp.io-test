@@ -1,5 +1,5 @@
 FROM node:18-buster
-RUN apk add --no-cache python2 g++ make
+RUN apt install python3 g++ make
 WORKDIR /app
 COPY . .
 RUN npm install --production
