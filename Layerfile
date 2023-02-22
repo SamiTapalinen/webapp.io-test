@@ -36,6 +36,7 @@ RUN npm install
 WORKDIR /root/server
 RUN npm install
 
+
 RUN docker-compose up -d
 EXPOSE WEBSITE http://localhost:5001 /api
 EXPOSE WEBSITE http://localhost:3000 /
